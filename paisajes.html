@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="estilos/estilos.css">
+      <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+      <title> Entrega final CSS - Retratos</title>
+      <style>
+      .r1{
+        -webkit-filter:blur(10px);
+        filter: blur(10px);
+      }
+      .r2, .r4, .r6{
+        -webkit-filter:grayscale(100%);
+        filter: grayscale(100%);
+      }
+      .r3{
+        -webkit-filter:sepia(90%);
+        filter: sepia(90%);
+      }
+
+      li{
+        list-style: none;
+
+      }
+      .imagen2:hover{
+        animation: animacion 1s;
+        }
+        @keyframes animacion {
+          from{
+            transform: rotatez(0deg);
+          }
+          to{
+            transform: rotatez(10deg);
+          }
+      }
+      .imagen3:hover{
+        animation: animacion1 1s;
+        }
+        @keyframes animacion1 {
+          from{
+            transform: rotatey(0px);
+            transform: translatex(0px);
+          }
+          to{
+            transform: rotatey(5px);
+            transform: translatex(20px);
+          }
+        }
+
+        .contenedor {
+          position :relative;
+          -webkit-animation: mymove 5s ; /* Safari 4.0 - 8.0 */
+          animation: mymove 5s ;
+        }
+
+        /* Safari 4.0 - 8.0 */
+        @-webkit-keyframes mymove {
+          0% {top: 150px;}
+          60%{top: -5px;}
+          100%{top: 0px;}
+        }
+
+        /* Standard syntax */
+        @keyframes mymove {
+          0% {top: 150px;}
+          60%{top: -5px;}
+          100%{top: 0px;}
+        }
+
+      </style>
+    </head>
+<body>
+  <div class="contenedor">
+        <header>
+          <div class="encabezado">
+            <h1>Comenzando con la Fotografia</h1>
+          </div>
+          <div class="encabezado1">
+            <ul id="menu">
+              <li class="link"><a href="index.html"> Inicio </a></li>
+              <li class="link"><a href="retratos.html"> Retratos </a></li>
+              <li class="link"><a id="link1" href="paisajes.html"> Paisajes </a></li>
+            </ul>
+          </div>
+
+        </header>
+
+        <div class="contenedorfotos">
+          <div><img class="r1" id="r1" src="imagenes/p1.jpg" alt="r1" title="r1"></img></div>
+          <div><img class="r2" id="r1" src="imagenes/p1.jpg" alt="r1" title="r1"></img></div>
+          <div><img class="r3" id="r1" src="imagenes/p1.jpg" alt="r1" title="r1"></img></div>
+          <div><img class="r4" id="r1" src="imagenes/p1.jpg" alt="r1" title="r1"></img></div>
+          <div><img class="r5" id="r1" src="imagenes/p1.jpg" alt="r1" title="r1"></img></div>
+          <div><img class="r6" id="r1" src="imagenes/p1.jpg" alt="r1" title="r1"></img></div>
+
+        </div>
+
+
+        <div class="contenedor4">
+          <div class="bloque1">
+            <ul class="contacto">
+              <li> <b>CONTACTO </b></li>
+              <li> rolo@gmail.com </li>
+              <li> mitre 4321 </li>
+              <li> 5555 5555 </li>
+            </ul>
+          </div>
+          <div class="bloque1">
+            <ul class="contacto">
+              <li><b> Terminos </b></li>
+              <li> Los terminos son y condiciones son....</li>
+            </ul>
+          </div>
+          <div class="bloque1">
+            <ul class="contacto">
+              <li><b> Redes Sociales</b> </li>
+              <li> @Rolofotos </li>
+              <li> /Rolofotos </li>
+              <li> @Rolofotos </li>
+            </ul>
+          </div>
+          <div class="bloque1">
+            <ul class="contacto">
+              <li><b> Derechos </b></li>
+              <li> CopyRigth-2019 ></li>
+            </ul>
+          </div>
+        </div>
+    </div>
+</div>
+  </body>
+</html>
